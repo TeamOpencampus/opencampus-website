@@ -44,8 +44,8 @@ section {
   cursor: pointer;
   background: none;
   font-size: 1.7rem;
-  padding: 10px 30px;
-  border-radius: 14px;
+  padding: 1rem 3rem;
+  border-radius: 16px;
 }
 
 .btn:hover {
@@ -233,6 +233,12 @@ section {
   padding: 2rem 9%;
 }
 
+.home .box.second {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .home .box .content {
   width: 50rem;
 }
@@ -256,7 +262,19 @@ section {
   padding: 1rem 0;
 }
 
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 3rem;
+  color: #10221b;
+}
 
+.category .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(29rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+  gap: 1.5rem;
+}
 
 .category .box-container .box {
   text-align: center;
