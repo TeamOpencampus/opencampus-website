@@ -1,2 +1,5 @@
 # LandingPage
-Opencanpus Landing Page
+
+## Landing Page Snaps
+
+![FullPage](./image/full-page.jpg)
