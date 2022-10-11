@@ -1000,3 +1000,28 @@ section {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+.go-to-top-container{
+  display: none;
+}
+
+.go-to-top-btn{
+  height: 50px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: #06283d;
+  border: 1px solid #fff;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 25px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.go-to-top-btn i {
+  position: absolute;
+  top: 17%;
+}

@@ -168,3 +168,13 @@ function toggleAccordion() {
 }
 
 items.forEach((item) => item.addEventListener("click", toggleAccordion));
+
+let goToTop = document.getElementById('goToTop');
+
+window.onscroll= function () {
+  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+    goToTop.style.display = "block";
+  } else {
+    goToTop.style.display = "none";
+  }
+}
