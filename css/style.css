@@ -5,6 +5,7 @@
   --color-secondary: #030233;
   --color-light: #e5e5e5;
   --color-gray: #eee;
+  --transition-linear: 0.2s linear;
 }
 
 * {
@@ -30,6 +31,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  transition: var(--transition-linear);
 }
 
 html {
@@ -1036,4 +1038,109 @@ section {
 .go-to-top-btn i {
   position: absolute;
   top: 17%;
+}
+
+/* dark-theme */
+
+body.dark-theme {
+  background-color: var(--color-secondary);
+}
+
+body.dark-theme .btn {
+  border: 0.2rem solid var(--color-light);
+  color: var(--color-light);
+}
+
+body.dark-theme .btn:hover {
+  background: var(--color-light);
+  color: var(--color-secondary);
+}
+
+body.dark-theme .heading {
+  color: var(--color-light);
+}
+
+body.dark-theme .header {
+  background-color: var(--color-secondary);
+}
+
+body.dark-theme .header.active {
+  background: var(--color-secondary);
+}
+
+body.dark-theme .header .icons a,
+body.dark-theme .header .icons div {
+  color: var(--color-light);
+}
+
+body.dark-theme .header .navbar a {
+  color: var(--color-light);
+}
+
+body.dark-theme .header .navbar a:hover {
+  color: var(--color-primary);
+}
+
+body.dark-theme .header .navbar a.active {
+  color: var(--color-primary);
+}
+body.dark-theme .header .navbar .active a.active {
+  color: var(--color-secondary);
+}
+
+body.dark-theme .header .navbar.active {
+  background: var(--color-primary);
+}
+
+body.dark-theme .header .navbar.active a.active {
+  color: var(--color-secondary);
+}
+
+body.dark-theme .header .navbar.active a:hover {
+  color: #15144d;
+}
+
+body.dark-theme .home .box .content {
+  color: var(--color-primary);
+}
+
+body.dark-theme .home .box .content span {
+  color: var(--color-light);
+}
+
+body.dark-theme .home .box .content p {
+  color: var(--color-light);
+}
+
+body.dark-theme .category .box-container .box p {
+  color: var(--color-light);
+}
+
+body.dark-theme .about {
+  background: #15144d;
+}
+
+body.dark-theme .about .content p {
+  color: var(--color-light);
+}
+
+body.dark-theme .newsletter,
+body.dark-theme .faq {
+  background: #15144d;
+}
+
+body.dark-theme .newsletter .content form {
+  border: 0.2rem solid var(--color-primary);
+}
+
+body.dark-theme .newsletter .content p {
+  color: var(--color-light);
+}
+
+body.dark-theme .newsletter .content form .btn:hover {
+  border: 0.2rem solid var(--color-secondary);
+}
+
+body.dark-theme .accordion .accordion-content p {
+  color: var(--color-light);
 }

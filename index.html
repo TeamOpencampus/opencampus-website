@@ -1,250 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenCampus</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>OpenCampus</title>
-	<link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-	<!-- font awesome cdn link  -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-	<!-- custom css file link  -->
-	<link rel="stylesheet" href="css/style.css" />
-</head>
+  <body>
+    <!-- header section starts  -->
+    <header class="header">
+      <a href="#" class="logo">
+        <i><img src="/assets/logo.png" style="width: 190px; height: 70px" /></i
+      ></a>
+      <nav class="navbar">
+        <div id="nav-close" class="fas fa-times"></div>
+        <a class="home-section" href="#home-section">home</a>
+        <a class="category-section" href="#category-section">Category</a>
+        <a class="about-section" href="#about-section">about</a>
+        <a class="newsletter-section" href="#newsletter-section">contact us</a>
+        <a class="faq-section" href="#faq-section">FAQ</a>
+      </nav>
+      <div class="btn-toggle-parent">
+        <button id="dark-theme" class="btn-toggle off">
+          <span class="btn-toggle-pin"> </span>
+          <span class="btn-toggle-emoji btn-toggle-emoji-left">&#127773;</span>
+          <span class="btn-toggle-emoji btn-toggle-emoji-right">&#127774;</span>
+        </button>
+      </div>
+      <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn"></div>
+      </div>
+      <div></div>
+    </header>
+    <!-- header section ends -->
+    <!-- search form  -->
+    <div class="search-form">
+      <div id="close-search"></div>
+    </div>
+    <!-- home section starts  -->
+    <section class="home" id="home-section">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-slide">
+              <div class="box">
+                <div class="job-img">
+                  <img
+                    id="job"
+                    src="/assets/job.svg"
+                    alt="Job Image"
+                    width="500"
+                    height="500"
+                  />
+                </div>
+                <div class="content">
+                  <span>confuse about</span>
+                  <h3>career !!</h3>
+                  <p>
+                    Whether you are looking for a career change, a new job or
+                    you are not sure what success means to you, chances are
+                    you're in need of a little motivation to boost your spirits.
+                    This is the place for you . . .
+                  </p>
+                  <a href="#" class="btn">Sign up</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- home section ends -->
+    <!-- category section starts  -->
+    <section class="category" id="category-section">
+      <h1 class="heading">quick look !</h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="/assets/category-1.webp" alt="" />
+          <h3>Employers</h3>
+          <p>
+            You have the best combination of talent, skills and attitude that
+            add up to the great performance.
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+        <div class="box">
+          <img src="/assets/category-2.webp" alt="" />
+          <h3>universities</h3>
+          <p>
+            A university is an institution of higher education and research
+            which awards academic degrees in several academics.
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+        <div class="box">
+          <img src="/assets/category-3.webp" alt="" width="00" height="600" />
+          <h3>students</h3>
+          <p>
+            You won't be able to use everything you learned but you'll have a
+            great foundation to build on.
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+      </div>
+    </section>
+    <!-- category section ends -->
+    <!-- about section starts  -->
+    <section class="about" id="about-section">
+      <div class="image">
+        <img src="/assets/about-img.webp" alt="" />
+      </div>
+      <div class="content">
+        <h3>hey ! this is the platform</h3>
+        <p>
+          Here it will help you to know and understand yourself and the world of
+          work in order to make career, educational, and life decisions.
+        </p>
+        <p>
+          Career development is more than just deciding on a major and what job
+          you want to get when you graduate. It really is a lifelong process,
+          meaning that throughout your life you will change, situations will
+          change, and you will continually have to make career and life
+          decisions.
+        </p>
+        <a href="#" class="btn">read more</a>
+      </div>
+    </section>
+    <!-- about section ends -->
+    <!-- newsletter section  -->
+    <section class="newsletter" id="newsletter-section">
+      <div class="content">
+        <h1 class="heading">enroll now !!!</h1>
+        <p>
+          Motivation towards a particular career also affected students' choice
+          to enrol in a particular carrier guidance
+        </p>
+        <form action="">
+          <input
+            type="email"
+            name=""
+            placeholder="Enter your email"
+            id=""
+            class="email"
+          />
+          <input type="submit" value="join us" class="btn" />
+        </form>
+      </div>
+    </section>
+    <!-- FAQ Section -->
+    <section class="faq" id="faq-section">
+      <h1 class="heading">FAQs...</h1>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button id="accordion-button-1" aria-expanded="false">
+            <span class="accordion-title">What is OpenCampus?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore.
+            </p>
+          </div>
+        </div>
+      </div>
 
-<body>
-	<!-- header section starts  -->
-	<header class="header">
-		<a href="#" class="logo">
-			<i><img src="/assets/logo.png" style="width: 190px; height: 70px" /></i></a>
-		<nav class="navbar">
-			<div id="nav-close" class="fas fa-times"></div>
-			<a class="home-section" href="#home-section">home</a>
-			<a class="category-section" href="#category-section">Category</a>
-			<a class="about-section" href="#about-section">about</a>
-			<a class="newsletter-section" href="#newsletter-section">contact us</a>
-			<a class="faq-section" href="#faq-section">FAQ</a>
-		</nav>
-		<div class="icons">
-			<div id="menu-btn" class="fas fa-bars"></div>
-			<div id="search-btn"></div>
-		</div>
-	</header>
-	<!-- header section ends -->
-	<!-- search form  -->
-	<div class="search-form">
-		<div id="close-search"></div>
-	</div>
-	<!-- home section starts  -->
-	<section class="home" id="home-section">
-		<div class="swiper home-slider">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<div class="swiper-slide">
-						<div class="box">
-							<div class="job-img">
-								<img id="job" src="/assets/job.svg" alt="Job Image" width="500" height="500" />
-							</div>
-							<div class="content">
-								<span>confuse about</span>
-								<h3>career !!</h3>
-								<p>
-									Whether you are looking for a career change, a new job or you are not
-									sure what success means to you, chances are you're in need of a little
-									motivation to boost your spirits. This is the place for you . . .
-								</p>
-								<a href="#" class="btn">Sign up</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- home section ends -->
-	<!-- category section starts  -->
-	<section class="category" id="category-section">
-		<h1 class="heading">quick look !</h1>
-		<div class="box-container">
-			<div class="box">
-				<img src="/assets/category-1.webp" alt="" />
-				<h3>Employers</h3>
-				<p>
-					You have the best combination of talent, skills and attitude that add up
-					to the great performance.
-				</p>
-				<a href="#" class="btn">read more</a>
-			</div>
-			<div class="box">
-				<img src="/assets/category-2.webp" alt="" />
-				<h3>universities</h3>
-				<p>
-					A university is an institution of higher education and research which
-					awards academic degrees in several academics.
-				</p>
-				<a href="#" class="btn">read more</a>
-			</div>
-			<div class="box">
-				<img src="/assets/category-3.webp" alt="" width="00" height="600" />
-				<h3>students</h3>
-				<p>
-					You won't be able to use everything you learned but you'll have a great
-					foundation to build on.
-				</p>
-				<a href="#" class="btn">read more</a>
-			</div>
-		</div>
-	</section>
-	<!-- category section ends -->
-	<!-- about section starts  -->
-	<section class="about" id="about-section">
-		<div class="image">
-			<img src="/assets/about-img.webp" alt="" />
-		</div>
-		<div class="content">
-			<h3>hey ! this is the platform</h3>
-			<p>
-				Here it will help you to know and understand yourself and the world of work
-				in order to make career, educational, and life decisions.
-			</p>
-			<p>
-				Career development is more than just deciding on a major and what job you
-				want to get when you graduate. It really is a lifelong process, meaning
-				that throughout your life you will change, situations will change, and you
-				will continually have to make career and life decisions.
-			</p>
-			<a href="#" class="btn">read more</a>
-		</div>
-	</section>
-	<!-- about section ends -->
-	<!-- newsletter section  -->
-	<section class="newsletter" id="newsletter-section">
-		<div class="content">
-			<h1 class="heading">enroll now !!!</h1>
-			<p>
-				Motivation towards a particular career also affected students' choice to
-				enrol in a particular carrier guidance
-			</p>
-			<form action="">
-				<input type="email" name="" placeholder="Enter your email" id="" class="email" />
-				<input type="submit" value="join us" class="btn" />
-			</form>
-		</div>
-	</section>
-	<!-- FAQ Section -->
-	<section class="faq" id="faq-section">
-		<h1 class="heading">FAQs...</h1>
-		<div class="accordion">
-			<div class="accordion-item">
-				<button id="accordion-button-1" aria-expanded="false">
-					<span class="accordion-title">What is OpenCampus?</span>
-					<span class="icon" aria-hidden="true"></span>
-				</button>
-				<div class="accordion-content">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-						tempor incididunt ut labore.
-					</p>
-				</div>
-			</div>
-		</div>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button id="accordion-button-2" aria-expanded="false">
+            <span class="accordion-title">How to Join OpenCampus?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore.
+            </p>
+          </div>
+        </div>
+      </div>
 
-		<div class="accordion">
-			<div class="accordion-item">
-				<button id="accordion-button-2" aria-expanded="false">
-					<span class="accordion-title">How to Join OpenCampus?</span>
-					<span class="icon" aria-hidden="true"></span>
-				</button>
-				<div class="accordion-content">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-						tempor incididunt ut labore.
-					</p>
-				</div>
-			</div>
-		</div>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button id="accordion-button-3" aria-expanded="false">
+            <span class="accordion-title"
+              >Benefits of Joining OpenCampus for Students?</span
+            >
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore.
+            </p>
+          </div>
+        </div>
+      </div>
 
-		<div class="accordion">
-			<div class="accordion-item">
-				<button id="accordion-button-3" aria-expanded="false">
-					<span class="accordion-title">Benefits of Joining OpenCampus for Students?</span>
-					<span class="icon" aria-hidden="true"></span>
-				</button>
-				<div class="accordion-content">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-						tempor incididunt ut labore.
-					</p>
-				</div>
-			</div>
-		</div>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button id="accordion-button-4" aria-expanded="false">
+            <span class="accordion-title"
+              >Benefits of Joining OpenCampus for Institutions?</span
+            >
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END of FAQ section -->
 
-		<div class="accordion">
-			<div class="accordion-item">
-				<button id="accordion-button-4" aria-expanded="false">
-					<span class="accordion-title">Benefits of Joining OpenCampus for Institutions?</span>
-					<span class="icon" aria-hidden="true"></span>
-				</button>
-				<div class="accordion-content">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-						tempor incididunt ut labore.
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END of FAQ section -->
+    <!-- Go to top button -->
+    <div class="go-to-top-container" id="goToTop">
+      <a class="go-to-top-btn" href="#">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    </div>
 
-	<!-- Go to top button -->
-	<div class="go-to-top-container" id="goToTop">
-		<a class="go-to-top-btn" href="#">
-			<i class="fas fa-arrow-up"></i>
-		</a>
-	</div>
+    <!-- Go to top butotn ends -->
 
-	<!-- Go to top butotn ends -->
+    <!-- footer section starts  -->
+    <section class="footer" id="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#home">home</a>
+          <a href="#category">Category</a>
+          <a href="#about">about</a>
+          <a href="mailto:team.opencampus@gmail.com">contact us</a>
+        </div>
+        <div class="box">
+          <h3>extra links</h3>
+          <a href="#">ask questions</a>
+          <a href="#">terms of use</a>
+          <a href="#">privacy policy</a>
+        </div>
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="mailto:team.opencampus@gmail.com">
+            <i class="fas fa-envelope"></i>team.opencampus@gmail.com</a
+          >
+          <a href="#">
+            <i class="fas fa-map"></i> 21, Convent Rd, Philips, Kolkata, West
+            Bengal 700014
+          </a>
+        </div>
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="https://github.com/TeamOpencampus">
+            <i class="fab fa-github"></i> gitHub
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- footer section ends -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- custom js file link  -->
 
-	<!-- footer section starts  -->
-	<section class="footer" id="footer">
-		<div class="box-container">
-			<div class="box">
-				<h3>quick links</h3>
-				<a href="#home">home</a>
-				<a href="#category">Category</a>
-				<a href="#about">about</a>
-				<a href="mailto:team.opencampus@gmail.com">contact us</a>
-			</div>
-			<div class="box">
-				<h3>extra links</h3>
-				<a href="#">ask questions</a>
-				<a href="#">terms of use</a>
-				<a href="#">privacy policy</a>
-			</div>
-			<div class="box">
-				<h3>contact info</h3>
-				<a href="mailto:team.opencampus@gmail.com">
-					<i class="fas fa-envelope"></i>team.opencampus@gmail.com</a>
-				<a href="#">
-					<i class="fas fa-map"></i> 21, Convent Rd, Philips, Kolkata, West Bengal
-					700014
-				</a>
-			</div>
-			<div class="box">
-				<h3>follow us</h3>
-				<a href="https://github.com/TeamOpencampus">
-					<i class="fab fa-github"></i> gitHub
-				</a>
-			</div>
-		</div>
-	</section>
-	<!-- footer section ends -->
-	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-	<!-- custom js file link  -->
-
-	<script src="./index.js" type="module"></script>
-</body>
-
+    <script src="./index.js" type="module"></script>
+    <script src="./dark-theme/index.js" type="module"></script>
+  </body>
 </html>

@@ -1,0 +1,83 @@
+.btn-toggle-parent {
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.btn-toggle {
+  height: 35px;
+  width: 69px;
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: var(--color-light);
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: ease-in-out 0.5s;
+  position: relative;
+}
+
+.btn-toggle:hover {
+  background-color: var(--color-light);
+}
+.btn-toggle:focus,
+.btn-toggle:active {
+  outline: none;
+}
+.btn-toggle::-moz-focus-inner {
+  border: 0;
+}
+
+.btn-toggle-pin {
+  width: 27px;
+  height: 27px;
+  border-radius: 30px;
+  transition: left ease 0.5s;
+  background-color: #ffffff;
+  position: absolute;
+  transition: ease-in-out 0.35s;
+  left: 6px;
+  top: 4px;
+  z-index: 10;
+}
+.btn-toggle.on {
+  background-color: var(--color-primary);
+}
+
+.btn-toggle.on .btn-toggle-pin {
+  left: 37px;
+  background-color: var(--color-secondary);
+}
+
+.btn-toggle-emoji {
+  font-size: 16px;
+  position: absolute;
+  top: 5px;
+  right: 38px;
+  transition: ease-in-out 0.35s;
+  z-index: 5;
+}
+
+.btn-toggle-emoji-left {
+  opacity: 0;
+  visibility: hidden;
+  transition: ease-in-out 0.5s;
+  right: 38px;
+}
+
+.btn-toggle-emoji-right {
+  opacity: 1;
+  visibility: visible;
+  transition: ease-in-out 0.5s;
+  right: 11px;
+}
+
+body.dark-theme .btn-toggle-emoji-left {
+  opacity: 1;
+  visibility: visible;
+}
+
+body.dark-theme .btn-toggle-emoji-right {
+  opacity: 0;
+  visibility: hidden;
+}
