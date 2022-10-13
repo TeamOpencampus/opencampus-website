@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
+
+:root {
+  --color-primary: #0c56ac;
+  --color-secondary: #030233;
+  --color-light: #e5e5e5;
+  --color-gray: #eee;
+}
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -40,7 +48,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #030233;
+  background: var(--color-secondary);
 }
 
 section {
@@ -50,8 +58,8 @@ section {
 .btn {
   margin-top: 1rem;
   display: inline-block;
-  border: 0.2rem solid #030233;
-  color: #030233;
+  border: 0.2rem solid var(--color-secondary);
+  color: var(--color-secondary);
   cursor: pointer;
   background: none;
   font-size: 1.7rem;
@@ -60,7 +68,7 @@ section {
 }
 
 .btn:hover {
-  background: #030233;
+  background: var(--color-secondary);
   color: #fff;
 }
 
@@ -68,7 +76,7 @@ section {
   text-align: center;
   margin-bottom: 2.5rem;
   font-size: 4rem;
-  color: #030233;
+  color: var(--color-secondary);
 }
 
 .header {
@@ -96,32 +104,32 @@ section {
 .header .logo {
   margin-right: auto;
   font-size: 2.5rem;
-  color: #030233;
+  color: var(--color-secondary);
   font-weight: bolder;
 }
 
 .header .logo i {
-  color: #0c56ac;
+  color: var(--color-primary);
 }
 
 .header .navbar a {
   margin-left: 2rem;
   font-size: 1.7rem;
-  color: #030233;
+  color: var(--color-secondary);
 }
 
 .header .navbar a:hover {
-  color: #0c56ac;
+  color: var(--color-primary);
 }
 
 .header .navbar a.active {
-  color: #0c56ac;
+  color: var(--color-primary);
 }
 
 .header .navbar #nav-close {
   font-size: 5rem;
   cursor: pointer;
-  color: #030233;
+  color: var(--color-secondary);
   display: none;
 }
 
@@ -130,12 +138,12 @@ section {
   font-size: 2.5rem;
   margin-left: 2rem;
   cursor: pointer;
-  color: #030233;
+  color: var(--color-secondary);
 }
 
 .header .icons a:hover,
 .header .icons div:hover {
-  color: #0c56ac;
+  color: var(--color-primary);
 }
 
 .header #menu-btn {
@@ -178,7 +186,7 @@ section {
 }
 
 .search-form #close-search:hover {
-  color: #0c56ac;
+  color: var(--color-primary);
 }
 
 .search-form form {
@@ -226,7 +234,7 @@ section {
 }
 
 .search-form form label:hover {
-  color: #0c56ac;
+  color: var(--color-primary);
 }
 
 .home {
@@ -257,24 +265,24 @@ section {
 
 .home .box .content {
   width: 50rem;
-  color: #0c56ac;
+  color: var(--color-primary);
 }
 
 .home .box .content span {
   font-size: 4rem;
-  color: #030233;
+  color: var(--color-secondary);
 }
 
 .home .box .content h3 {
   font-size: 6rem;
-  color: #0c56ac;
+  color: var(--color-primary);
   padding-top: 0.5rem;
   text-transform: uppercase;
 }
 
 .home .box .content p {
   line-height: 2;
-  color: #030233;
+  color: var(--color-secondary);
   font-size: 1.5rem;
   padding: 1rem 0;
 }
@@ -282,7 +290,7 @@ section {
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 3rem;
-  color: #030233;
+  color: var(--color-secondary);
 }
 
 .category .box-container {
@@ -307,18 +315,18 @@ section {
 
 .category .box-container .box h3 {
   font-size: 2rem;
-  color: #0c56ac;
+  color: var(--color-primary);
 }
 
 .category .box-container .box p {
   font-size: 1.5rem;
-  color: #030233;
+  color: var(--color-secondary);
   padding: 1rem 0;
   line-height: 2;
 }
 
 .about {
-  background: #eee;
+  background: var(--color-gray);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,18 +360,18 @@ section {
 
 .about .content h3 {
   font-size: 3rem;
-  color: #0c56ac;
+  color: var(--color-primary);
 }
 
 .about .content p {
   font-size: 1.5rem;
-  color: #030233;
+  color: var(--color-secondary);
   padding: 1rem 0;
   line-height: 2;
 }
 
 .shop .slide {
-  border: 0.2rem solid #030233;
+  border: 0.2rem solid var(--color-secondary);
 }
 
 .shop .slide:hover .image .icons {
@@ -401,13 +409,13 @@ section {
   width: 4.5rem;
   line-height: 4.5rem;
   font-size: 1.7rem;
-  background: #030233;
+  background: var(--color-secondary);
   color: #fff;
   margin: 0 0.2rem;
 }
 
 .shop .slide .image .icons a:hover {
-  background: #0c56ac;
+  background: var(--color-primary);
 }
 
 .shop .slide .content {
@@ -417,23 +425,23 @@ section {
 
 .shop .slide .content h3 {
   font-size: 2rem;
-  color: #030233;
+  color: var(--color-secondary);
 }
 
 .shop .slide .content .price {
   padding: 1rem 0;
   padding-top: 0.5rem;
   font-size: 2rem;
-  color: #0c56ac;
+  color: var(--color-primary);
 }
 
 .shop .slide .content .stars i {
   font-size: 1.7rem;
-  color: #030233;
+  color: var(--color-secondary);
 }
 
 .packages {
-  background: #eee;
+  background: var(--color-gray);
 }
 
 .packages .box-container {
@@ -447,14 +455,14 @@ section {
 .packages .box-container .box {
   text-align: center;
   background: #fff;
-  border: 0.2rem solid #030233;
+  border: 0.2rem solid var(--color-secondary);
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
 }
 
 .packages .box-container .box:hover {
-  background: #030233;
+  background: var(--color-secondary);
 }
 
 .packages .box-container .box:hover .content > * {
@@ -467,7 +475,7 @@ section {
 
 .packages .box-container .box:hover .btn:hover {
   background: #fff;
-  color: #030233;
+  color: var(--color-secondary);
 }
 
 .packages .box-container .box .image {
@@ -492,23 +500,23 @@ section {
 
 .packages .box-container .box .content h3 {
   font-size: 2rem;
-  color: #030233;
+  color: var(--color-secondary);
 }
 
 .packages .box-container .box .content p {
   font-size: 1.5rem;
-  color: #030233;
+  color: var(--color-secondary);
   padding: 1rem 0;
   line-height: 2;
 }
 
 .packages .box-container .box .content .price {
   font-size: 2rem;
-  color: #0c56ac;
+  color: var(--color-primary);
 }
 
 .services {
-  background: #eee;
+  background: var(--color-gray);
 }
 
 .services .box-container {
@@ -522,13 +530,13 @@ section {
 .services .box-container .box {
   text-align: center;
   padding: 2rem;
-  border: 0.2rem solid #030233;
+  border: 0.2rem solid var(--color-secondary);
   border-radius: 0.5rem;
   background: #fff;
 }
 
 .services .box-container .box:hover {
-  background: #030233;
+  background: var(--color-secondary);
 }
 
 .services .box-container .box:hover img {
@@ -547,7 +555,7 @@ section {
 
 .services .box-container .box:hover .btn:hover {
   background: #fff;
-  color: #030233;
+  color: var(--color-secondary);
 }
 
 .services .box-container .box img {
@@ -557,12 +565,12 @@ section {
 
 .services .box-container .box h3 {
   font-size: 2rem;
-  color: #0c56ac;
+  color: var(--color-primary);
 }
 
 .services .box-container .box p {
   font-size: 1.5rem;
-  color: #030233;
+  color: var(--color-secondary);
   padding: 1rem 0;
   line-height: 2;
 }
@@ -571,9 +579,9 @@ section {
   padding: 2rem;
   font-size: 1.5rem;
   font-style: italic;
-  background: #eee;
+  background: var(--color-gray);
   border-radius: 0.5rem;
-  color: #030233;
+  color: var(--color-secondary);
   line-height: 2;
   position: relative;
   z-index: 0;
@@ -587,7 +595,7 @@ section {
   left: 0.7rem;
   height: 3rem;
   width: 3rem;
-  background: #eee;
+  background: var(--color-gray);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
@@ -610,11 +618,11 @@ section {
 
 .reviews .slide .user h3 {
   font-size: 2rem;
-  color: #030233;
+  color: var(--color-secondary);
 }
 
 .reviews .slide .user span {
-  color: #0c56ac;
+  color: var(--color-primary);
   font-size: 1.5rem;
 }
 
@@ -632,7 +640,7 @@ section {
 }
 
 .blogs .slide .icons {
-  background: #030233;
+  background: var(--color-secondary);
   border-radius: 0.5rem;
   padding: 1rem;
   position: relative;
@@ -647,29 +655,29 @@ section {
 }
 
 .blogs .slide .icons a:hover {
-  color: #0c56ac;
+  color: var(--color-primary);
 }
 
 .blogs .slide .icons a i {
   padding-right: 0.5rem;
-  color: #0c56ac;
+  color: var(--color-primary);
 }
 
 .blogs .slide h3 {
   font-size: 2rem;
-  color: #030233;
+  color: var(--color-secondary);
 }
 
 .blogs .slide p {
   font-size: 1.4rem;
   padding: 1rem 0;
   line-height: 2;
-  color: #030233;
+  color: var(--color-secondary);
 }
 
 .newsletter,
 .faq {
-  background: #eee;
+  background: var(--color-gray);
 }
 
 .newsletter .content {
@@ -681,14 +689,14 @@ section {
 .newsletter .content p {
   font-size: 1.5rem;
   line-height: 2;
-  color: #030233;
+  color: var(--color-secondary);
 }
 
 .newsletter .content form {
   margin-top: 2rem;
   background: #fff;
   border-radius: 5rem;
-  border: 0.2rem solid #030233;
+  border: 0.2rem solid var(--color-secondary);
   padding: 0.7rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -700,20 +708,20 @@ section {
   background: none;
   text-transform: none;
   font-size: 1.6rem;
-  color: #030233;
+  color: var(--color-secondary);
   padding: 0 1.3rem;
 }
 
 .newsletter .content form .btn {
   margin-top: 0;
   border-radius: 5rem;
-  background: #030233;
+  background: var(--color-secondary);
   color: #fff;
 }
 
 .newsletter .content form .btn:hover {
   background: none;
-  color: #030233;
+  color: var(--color-secondary);
 }
 
 .clients .silde {
@@ -739,7 +747,7 @@ section {
 .faq p {
   font-size: 1.5rem;
   line-height: 2;
-  color: #030233;
+  color: var(--color-secondary);
 }
 
 .accordion .accordion-item {
@@ -747,7 +755,7 @@ section {
 }
 
 .accordion .accordion-item button[aria-expanded="true"] {
-  border-bottom: 1px solid #030233;
+  border-bottom: 1px solid var(--color-secondary);
 }
 
 .accordion button {
@@ -767,14 +775,14 @@ section {
 .accordion button:hover,
 .accordion button:focus {
   cursor: pointer;
-  color: #0c56ac;
+  color: var(--color-primary);
 }
 
 .accordion button:hover::after,
 .accordion button:focus::after {
   cursor: pointer;
-  color: #0c56ac;
-  border: 1px solid #0c56ac;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
 }
 
 .accordion button .accordion-title {
@@ -815,7 +823,7 @@ section {
 }
 
 .accordion button[aria-expanded="true"] {
-  color: #0c56ac;
+  color: var(--color-primary);
 }
 
 .accordion button[aria-expanded="true"] .icon::after {
@@ -841,7 +849,7 @@ section {
   font-size: 1.5rem;
   font-weight: 300;
   margin: 1em 0;
-  color: #030233;
+  color: var(--color-secondary);
 }
 
 /* END of FAQ */
@@ -877,7 +885,7 @@ section {
 }
 
 .footer .box-container .box a:hover {
-  color: #0c56ac;
+  color: var(--color-primary);
 }
 
 .footer .box-container .box a:hover i {
@@ -894,7 +902,7 @@ section {
 }
 
 .footer .credit span {
-  color: #0c56ac;
+  color: var(--color-primary);
 }
 
 @media (max-width: 1200px) {
