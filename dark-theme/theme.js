@@ -1,10 +1,22 @@
-var icon = document.getElementById("theme-icon");
+function darkmode(){
+    const classDarkTheme = "dark-theme";
+    const bodyElement = document.querySelector("body");
+    const toggleBtn = document.getElementById("theme-icon");
 
-icon.onclick = () => {
-    document.body.classList.toggle("dark-theme");
-    if(document.body.classList.contains("dark-theme")){
-        icon.src = "../public/assets/sun.png";
-    } else{
-        icon.src = "../public/assets/moon.png";
+    const handleOnClickToggle = () => {
+        const isDarkModeOn = bodyElement.classList.length > 0;
+
+        if (isDarkModeOn) {
+            bodyElement.classList.remove(classDarkTheme);
+            toggleBtn.src = "../public/assets/moon.png";
+            return;
+          }
+      
+          bodyElement.classList.add(classDarkTheme);
+          toggleBtn.src = "../public/assets/sun.png";
+        };
+
+        toggleBtn.addEventListener("click", handleOnClickToggle);
     }
-}
+
+    darkmode();
