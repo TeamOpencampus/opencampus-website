@@ -1,0 +1,122 @@
+:root {
+    --color-primary: #0c56ac;
+    --color-dark: #121212;
+    --color-light: #e5e5e5;
+    --color-gray: #eee;
+  }
+
+
+
+.header #theme-icon {
+    width: 30px;
+    cursor: pointer;
+    margin-left: 20px;
+    
+  }
+
+  body.dark-theme {
+    background-color: var(--color-dark);
+  }
+  
+  body.dark-theme .btn {
+    border: 0.2rem solid var(--color-light);
+    color: var(--color-light);
+  }
+  
+  body.dark-theme .btn:hover {
+    background: var(--color-light);
+    color: var(--color-dark);
+  }
+  
+  body.dark-theme .heading {
+    color: var(--color-light);
+  }
+  
+  body.dark-theme .header {
+    background-color: var(--color-dark);
+  }
+  
+  body.dark-theme .header.active {
+    background: var(--color-dark);
+  }
+  
+  body.dark-theme .header .icons a,
+  body.dark-theme .header .icons div {
+    color: var(--color-light);
+  }
+  
+  body.dark-theme .header .navbar a {
+    color: var(--color-light);
+  }
+  
+  body.dark-theme .header .navbar a:hover {
+    color: var(--color-primary);
+  }
+  
+  body.dark-theme .header .navbar a.active {
+    color: var(--color-primary);
+  }
+  body.dark-theme .header .navbar .active a.active {
+    color: var(--color-dark);
+  }
+  
+  body.dark-theme .header .navbar.active {
+    background: var(--color-primary);
+  }
+  
+  body.dark-theme .header .navbar.active a.active {
+    color: var(--color-dark);
+  }
+  
+  body.dark-theme .header .navbar.active a:hover {
+    color: #15144d;
+  }
+  
+  body.dark-theme .home .box .content {
+    color: var(--color-primary);
+  }
+  
+  body.dark-theme .home .box .content span {
+    color: var(--color-light);
+  }
+  
+  body.dark-theme .home .box .content p {
+    color: var(--color-light);
+  }
+  
+  body.dark-theme .category .box-container .box p {
+    color: var(--color-light);
+  }
+  
+  body.dark-theme .about {
+    background: var(--color-dark);
+  }
+  
+  body.dark-theme .about .content p {
+    color: var(--color-light);
+  }
+  
+  body.dark-theme .newsletter,
+  body.dark-theme .faq {
+    background: var(--color-dark);
+  }
+  
+  body.dark-theme .newsletter .content form {
+    border: 0.2rem solid var(--color-primary);
+  }
+  
+  body.dark-theme .newsletter .content p {
+    color: var(--color-light);
+  }
+  
+  body.dark-theme .newsletter .content form .btn:hover {
+    border: 0.2rem solid var(--color-dark);
+  }
+  
+  body.dark-theme .accordion .accordion-content p {
+    color: var(--color-light);
+  }
+
+  body.dark-theme .footer {
+    background-color: #282828;
+  }
