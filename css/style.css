@@ -860,13 +860,10 @@ section {
 }
 
 .footer .box-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(25rem, 1fr)) [auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 1.5rem;
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap:wrap;
 }
-
 .footer .box-container .box h3 {
   font-size: 2rem;
   padding: 1.5rem 0;
@@ -877,16 +874,23 @@ section {
   display: block;
   font-size: 1.4rem;
   color: #fff;
-  padding: 1rem 0;
+  margin-bottom:5px;
 }
 
+.footer .box-container .box a span {
+  display:inline-block;
+  height:100%;
+  padding:0.5rem 4px;
+  border-bottom:0.1px solid #fff;
+}
 .footer .box-container .box a i {
   color: #d1dbe8;
   padding-right: 0.5rem;
 }
 
-.footer .box-container .box a:hover {
-  color: var(--color-primary);
+.footer .box-container .box a span:hover {
+  color: orange;
+  border-color:orange;
 }
 
 .footer .box-container .box a:hover i {
@@ -1001,8 +1005,36 @@ section {
   .swiper-button-prev::after {
     display: none;
   }
+
+  .footer .box-container {
+    justify-content: center;
+  }
+
+  .footer .box-container .box {
+    width:40%;
+    display:flex;
+    flex-direction: column;
+    margin-right:20px;
+  }
+  
+  .footer .box-container .box:nth-of-type(2n) {
+    text-align: right;
+  }
 }
 
+@media only screen and (max-width: 612px) {
+  .footer .box-container .box h3 {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+  }
+  .footer .box-container .box a {
+    font-size: 1.1rem;
+    margin-bottom:2px;
+  }
+  .footer .box-container .box a span {
+    padding:0.2rem 4px;
+  }
+}
 @media (max-width: 450px) {
   html {
     font-size: 50%;
