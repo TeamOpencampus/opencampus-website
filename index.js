@@ -168,6 +168,8 @@ function toggleAccordion() {
 
 items.forEach((item) => item.addEventListener("click", toggleAccordion));
 
+// Go to top button
+
 let goToTop = document.getElementById("goToTop");
 
 window.onscroll = function () {
